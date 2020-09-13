@@ -18,8 +18,7 @@ class MapController extends Controller
         
         } else {
             $ip = $_SERVER['REMOTE_ADDR'];
-            Log::info('server');
-
+            Log::info('server: '.$_SERVER['REMOTE_ADDR']);
         }
 
         try {
