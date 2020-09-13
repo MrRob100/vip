@@ -2011,7 +2011,7 @@ __webpack_require__.r(__webpack_exports__);
       var Icon = L.icon({
         // iconUrl: 'http://myinspirationinformation.com/wp-content/uploads/2015/12/logoAndName.png',
         // shadowUrl: 'http://leafletjs.com/docs/images/leaf-shadow.png',
-        iconUrl: own ? "public/icons/marker-red.png" : "public/icons/marker-blue.png",
+        iconUrl: own ? "icons/marker-red.png" : "icons/marker-blue.png",
         iconSize: [20, 20],
         // size of the icon
         shadowSize: [50, 64],
