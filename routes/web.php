@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MapController@index')->name('index');
+Route::get('/lookup', 'MapController@lookup')->name('lookup');
+Route::get('/points', 'MapController@points')->name('points');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
