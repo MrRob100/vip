@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Point;
+use Log;
 
 class MapController extends Controller
 {
@@ -12,8 +13,13 @@ class MapController extends Controller
         if ($_SERVER['SERVER_NAME'] === 'localhost') {
             // $ip = '186.83.228.58';
             $ip = '82.132.243.29';
+
+            Log::info('local');
+        
         } else {
             $ip = $_SERVER['REMOTE_ADDR'];
+            Log::info('server');
+
         }
 
         try {
