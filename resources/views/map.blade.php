@@ -7,7 +7,7 @@
     <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
     <script src="https://d3js.org/d3.v3.min.js" type="text/javascript"></script>
 
-    <script src="{{ asset('public/js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
 
     <style>

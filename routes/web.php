@@ -17,9 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\MapController::class, 'index'])->name('index');
 
+// Route::get('/lookup', 'MapController@lookup')->name('lookup');
+Route::get('/lookup', [App\Http\Controllers\MapController::class, 'lookup'])->name('lookup');
 
-Route::get('/lookup', 'MapController@lookup')->name('lookup');
-Route::get('/points', 'MapController@points')->name('points');
+// Route::get('/points', 'MapController@points')->name('points');
+Route::get('/points', [App\Http\Controllers\MapController::class, 'points'])->name('points');
+
 
 Auth::routes();
 
