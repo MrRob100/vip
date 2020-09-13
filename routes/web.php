@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'MapController@index')->name('index');
+// Route::get('/', 'MapController@index')->name('index');
+
+Route::get('/', [App\Http\Controllers\MapController::class, 'index'])->name('index');
+
+
 Route::get('/lookup', 'MapController@lookup')->name('lookup');
 Route::get('/points', 'MapController@points')->name('points');
 
