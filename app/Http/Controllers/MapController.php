@@ -29,9 +29,9 @@ class MapController extends Controller
         }
 
         //rands for testing
-        $json['latitude'] = rand(0,90);
-        $json['longitude'] = rand(0,90);
-        $json['city'] = rand() * 20 .'sville';
+        // $json['latitude'] = rand(0,90);
+        // $json['longitude'] = rand(0,90);
+        // $json['city'] = rand() * 20 .'sville';
 
         return $json;
     }
